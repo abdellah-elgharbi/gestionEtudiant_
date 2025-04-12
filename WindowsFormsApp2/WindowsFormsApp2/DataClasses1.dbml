@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ensaj" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ABDELLAH\SQL2002;Initial Catalog=ensaj;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="WindowsFormsApp2.Properties.Settings" SettingsPropertyName="ensajConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.etudiants" Member="etudiants">
+    <Type Name="etudiants">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Naissance" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Filiere" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Annee" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
